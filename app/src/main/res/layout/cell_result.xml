@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.price.samplenew.MainActivity">
+
+    <ImageView
+        android:src="@drawable/house"
+        android:layout_height="100dp"
+        android:id="@+id/imgvResult"
+        android:scaleType="fitXY"
+        android:layout_width="120dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imgvResult"
+        android:layout_toRightOf="@+id/imgvResult"
+        android:layout_toEndOf="@+id/imgvResult"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:id="@+id/tvPrice"
+        android:textSize="20sp"
+        android:textStyle="normal|bold"
+        android:textColor="@color/blue"
+        android:layout_marginRight="10dp" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvPrice"
+        android:layout_alignLeft="@+id/tvPrice"
+        android:layout_alignStart="@+id/tvPrice"
+        android:id="@+id/tvAddress"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/imgvResult"
+        android:background="@color/gray_dark"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"></LinearLayout>
+</RelativeLayout>

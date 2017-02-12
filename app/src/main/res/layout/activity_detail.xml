@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.price.samplenew.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/gray_lt"
+        android:id="@+id/rlyTopBar">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button3"
+            android:layout_centerVertical="true"
+            android:background="@color/transparent"
+            android:text="&lt;"
+            android:textColor="@color/blue"
+            android:textStyle="normal|bold"
+            android:textSize="30sp" />
+
+        <TextView
+            android:text="Property"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView"
+            android:layout_centerInParent="true"
+            android:textStyle="normal|bold"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rlyTopBar"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:src="@drawable/house"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgvContent"
+            android:scaleType="center" />
+
+        <TextView
+            android:text="Price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvPrice"
+            android:textColor="@color/blue"
+            android:textSize="20sp"
+            android:textStyle="normal|bold" />
+        <TextView
+            android:text="Address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvAddress"
+            android:layout_marginTop="5dp" />
+        <TextView
+            android:text="Structure"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvStructure"
+            android:layout_marginTop="5dp" />
+        <TextView
+            android:text="Detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvDetail"
+            android:layout_marginTop="5dp" />
+    </LinearLayout>
+
+</RelativeLayout>
